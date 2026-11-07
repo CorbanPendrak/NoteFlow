@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  QT_VERSION: '6.8.3'
+  QT_VERSION: '6.10.1'
   QSCI_VERSION: '2.14.1'
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
         shell: bash
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install Linux build and packaging deps
         if: runner.os == 'Linux'
